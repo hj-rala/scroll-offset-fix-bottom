@@ -18,9 +18,9 @@ function floatingScroll() {
     var $contHeight = $(document).height() - $(window).height() - $footH - $ftH + 180;
 
     if ($contHeight <= $tmp) {
-      ft.addClass("fix").css({ bottom: $tmp - $contHeight + 180 });
+      ft.css({ bottom: $tmp - $contHeight + 180 });
     } else {
-      ft.removeClass("fix").css({ bottom: 180 });
+      ft.css({ bottom: 180 });
     }
 
     setTimeout(function () {
